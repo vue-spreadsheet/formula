@@ -1,0 +1,15 @@
+{
+  "name": "js-formula-parser",
+  "version": "1.0.0",
+  "description": "Parses arithmentic expressions with nearly into a syntax tree",
+  "main": "index.js",
+  "author": "Synphonyte",
+  "license": "MIT",
+  "dependencies": {
+    "moo": "^0.5.1",
+    "nearley": "^2.19.3"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}
