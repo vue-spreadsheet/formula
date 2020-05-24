@@ -2,13 +2,27 @@
   "name": "@vue-spreadsheet/formula",
   "version": "0.1.0",
   "description": "Parses arithmentic expressions with nearley into a syntax tree",
-  "author": "synphonyte.com",
-  "license": "BSD 3-Clause",
+  "author": "Synphonyte",
+  "license": "BSD-3-Clause",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/vue-spreadsheet/formula",
+  "files": [
+    "dist/index.*",
+    "src/grammar.ne",
+    "src/ast.ts",
+    "src/index.ts"
+  ],
+  "scripts": {
+    "prepublish": "nearleyc src/grammar.ne -o src/grammar.ts && tsc"
+  },
   "dependencies": {
+    "math-ref-parser": "^1.2.0",
     "moo": "^0.5.1",
     "nearley": "^2.19.3"
   },
   "devDependencies": {
+    "@vue/cli": "^4.3.1",
     "typescript": "^3.9.3"
   }
 }
